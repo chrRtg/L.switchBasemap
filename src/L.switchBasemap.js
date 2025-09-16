@@ -31,6 +31,7 @@ L.Control.basemapsSwitcher = L.Control.extend({
             obj.id = index
 
             const imgContainer = L.DomUtil.create('div', 'basemapImg');
+            imgContainer.id = 'LSwitchBasemap-' + obj.techname;
             const img = L.DomUtil.create('div');
             const name = L.DomUtil.create('div', 'name');
             const check = L.DomUtil.create('div', 'check');
